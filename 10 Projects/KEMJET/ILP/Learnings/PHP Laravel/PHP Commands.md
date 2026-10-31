@@ -74,3 +74,10 @@ Laravel reads the configuration and creates an optimized cache for production. T
 ```bash
 tail -f storage/logs/laravel.log
 ```
+
+---
+### Add a controller for your frontend
+Create the controller: 
+```bash
+php artisan make:controller DigiLockerController
+```

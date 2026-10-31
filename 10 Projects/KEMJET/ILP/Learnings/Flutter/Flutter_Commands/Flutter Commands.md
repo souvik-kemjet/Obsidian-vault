@@ -11,3 +11,14 @@ flutter run -d emulator-5554
 flutter config --jdk-dir="C:\Program Files\Java\jdk-17"
 
 ```
+
+```
+dart format lib/
+flutter analyze
+flutter test
+flutter build apk --debug
+```
+
+
+[[flutter analyze]]
+[[dart format lib]]
