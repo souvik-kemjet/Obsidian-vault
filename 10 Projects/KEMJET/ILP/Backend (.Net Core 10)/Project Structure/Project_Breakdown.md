@@ -30,4 +30,14 @@
 
 ## About this Architecture 
 
+In a standard **N-Tier** setup, your `BAL` (Business Layer) would directly reference your `DAL` (Data Access Layer) to fetch data.
+
+In **Clean Architecture** (which your project uses), that relationship is inverted using **Dependency Inversion**:
+
+1. Your `BAL` defines an interface (e.g., `IRepository`).
+2. Your `DAL` implements that interface.
+3. Therefore, your Data Access Layer depends on your Business Layer, not the other way around.
+
+However, calling it **Clean Architecture** or **Onion Architecture** is much more precise, as it tells developers exactly how your dependencies flow toward the core domain.
+
 - It is a Low Coupling. You change the database implementation without affecting core business rules.
