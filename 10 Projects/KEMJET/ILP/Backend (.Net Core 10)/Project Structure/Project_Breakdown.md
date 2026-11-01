@@ -5,6 +5,7 @@
 - This is the innermost layer. 
 - It contains your core enterprise logic, entities, value objects, exceptions, and domain events. 
 - It has absolutely zero dependencies on any other projects or external databases.
+- The database is just a detail; business rules don't care what database you use.
 
 ### 2. **`Kemjet.Ilp.Contracts` (Application / Interface Definitions):**
 - This project defines:
@@ -26,3 +27,7 @@
 - They focus solely on handling inputs/outputs and routing requests to the application layer.
 
 ---
+
+## About this Architecture 
+
+- It is a Low Coupling. You change the database implementation without affecting core business rules.
