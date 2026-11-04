@@ -9,3 +9,7 @@ gh auth switch
 ```bash
 git branch backup-main-before-sync
 ```
+
+```
+git rev-parse --short HEAD
+```
