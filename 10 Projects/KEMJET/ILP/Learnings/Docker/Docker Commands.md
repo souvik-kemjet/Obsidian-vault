@@ -71,3 +71,14 @@ docker run -d --name kmejet-ilp-lan --network kemjet-net `
 ```powershell
 docker exec -it <container_name_or_id> bash
 ```
+
+```powershell
+docker compose -f deploy/compose/docker-compose.lan.yml restart api
+docker compose -f deploy/compose/docker-compose.lan.yml up -d
+```
+
+
+---
+
+
+
