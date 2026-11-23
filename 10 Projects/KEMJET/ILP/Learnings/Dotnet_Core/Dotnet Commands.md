@@ -25,3 +25,10 @@ dotnet test
 ```
 
 powershell -ExecutionPolicy Bypass -File scripts\lan-release.ps1                            
+
+## Migration Commands
+```bash
+dotnet ef migrations add TouristPermits --project src/Kemjet.Ilp.DAL --startup-project src/Kemjet.Ilp.Api --output-dir Migrations
+
+dotnet ef migrations add InitialIdentity --project src/Kemjet.Ilp.DAL --startup-project src/Kemjet.Ilp.Api --output-dir Migrations
+```
